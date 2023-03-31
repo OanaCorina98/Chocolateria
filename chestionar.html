@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis&family=Montserrat:ital,wght@1,200&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Chestionar</title>
+  </head>
+  <body class="chestionarBody">
+ <h1 class="display-3 text-dark text-center">Impreuna, imbunatatim experienta Chocolateria</h1>
+<form action="ciocolata.php" method="post">
+<div class="container-lg my-5">
+  <fieldset>
+  <legend>Informatii personale</legend>
+  Numele tau<br>
+  <input type="text" name="name"><br>
+  Adresa email<br>
+  <input type="email" name="email" required placeholder="Introdu o adresa de email"><br>
+</fieldset><br>
+<fieldset>
+  <legend>Experienta ta cu Chocolateria</legend><br>
+  <textarea class="p-3 rounded border text-secondary" rows="5" cols="20">"Scrie cateva cuvinte despre experienta cu Chocolateria"
+  </textarea><br><br>
+
+  Ai recomanda si altora Chocolateria?
+  <br>
+  <input type="radio" name="radio" value="r1">Da
+  <br>
+  <input type="radio" name="radio" value="r1">Nu <br><br>
+
+  Ce produse Chocolateria ai prefera?<br>
+  <div class="row">
+  <div class="col-md-4"><input type="checkbox" name="checkbox" value="ch1">Torturi si prajituri<br></div>
+  <div class="col-md-4"><input type="checkbox" name="checkbox" value="ch2">Praline<br></div>
+  <div class="col-md-4"><input type="checkbox" name="checkbox" value="ch3">Specialitati<br><br></div>
+</div>
+<button class="btn btn-outline-secondary mt-3">Trimite</button>
+</fieldset>
+</div>
+</form>
+  </body>
+</html>
